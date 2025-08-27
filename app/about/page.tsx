@@ -1,4 +1,12 @@
-"use client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Page",
+  description: "This is the about page",
+  keywords: ["about", "nextjs", "typescript"],
+  authors: [{ name: "Angui", url: "https://github.com/Angui" }],
+  twitter: { card: "summary_large_image", site: "@anguissauro" },
+};
 
 export default function About() {
 	console.log("About page rendered");
