@@ -1,3 +1,5 @@
+import RedirectButton from "./redirectButton";
+
 export default async function Users() {
 	console.log("Users page rendered");
 
@@ -13,6 +15,7 @@ export default async function Users() {
 					{users.map((user: { id: number; name: string; email: string }) => (
 						<li key={user.id} className="mb-2">
 							<strong>{user.name} - id: {user.id} </strong> - {user.email}
+							<RedirectButton id={user.id} />
 						</li>
 					))}
 				</ul>
