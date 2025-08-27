@@ -42,6 +42,9 @@ export default function RootLayout({
             <li>
               <Link href="/users">Users</Link>
             </li>
+            <li>
+              <Link href="/friends">Friends</Link>
+            </li>
           </ul>
         </nav>
         {children}
