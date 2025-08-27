@@ -39,6 +39,9 @@ export default function RootLayout({
             <li>
               <Link href="/contact">Contact</Link>
             </li>
+            <li>
+              <Link href="/users">Users</Link>
+            </li>
           </ul>
         </nav>
         {children}
